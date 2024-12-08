@@ -1,0 +1,40 @@
+#bg-sec {
+    min-height: 100vh;
+    background-color: #e1cdb2;
+}
+
+#bg-sec div h1 {
+    position: relative;
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    z-index: 1;
+}
+
+#bg-sec div h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: orange;
+    bottom: 0;
+    transition: all .6s;
+    z-index: -1;
+}
+
+#bg-sec div h1:hover::before {
+    height: 65%;
+}
+
+#bg-sec .b-mark h2 {
+    font-family: "Righteous", cursive;
+    font-size: 26px;
+    background: -webkit-linear-gradient(right, #3ca55c, #b5ac49);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#bg-sec .b-mark {
+    border-top: 2px dotted;
+    border-bottom: 2px dotted;
+}
+
